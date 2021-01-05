@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container">
+	<div class="row">
+	<h1>Welcome to KGISL HR Assistant</h1>
+	</div>
+	<div class="row">
+	<h3>Thanks for your interest in KGISL. You may check your interview status now by starting online chat here!</h3>
+	</div>
+	<br>
+	
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <button id="connect" class="btn btn-default" type="submit">Start Chat</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">End Chat
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table id="conversation" class="table table-striped" style="display:none">
+                <thead>
+                <tr>
+                    <th>HR Assistant:</th>
+                </tr>
+                </thead>
+                <tbody id="greetings">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+	 <div class="col-md-6">
+            <form class="form-inline" id="clientBox" style="display:none">
+                <div class="form-group">
+                    <textarea  id="msg" class="form-control" placeholder="Your msg here..."></textarea>
+                </div>
+               <button id="send" class="btn btn-default" type="submit">Send</button>
+            </form>
+        </div>
+	</div>
+</div>
+</body>
+</html>
