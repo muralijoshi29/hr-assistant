@@ -27,7 +27,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
-		registry.addEndpoint("/greeting").setHandshakeHandler(new DefaultHandshakeHandler() {
+		registry.addEndpoint("/chatroom").setHandshakeHandler(new DefaultHandshakeHandler() {
 			public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response,
 					WebSocketHandler wsHandler, Map attributes) throws Exception {
 

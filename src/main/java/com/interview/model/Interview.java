@@ -1,17 +1,16 @@
 package com.interview.model;
 
-import java.sql.Date;
-
 public class Interview {
 
-	private Date date;
+	private String date;
 	private String status;
 	private String feedback;
 	private String mode;
-	public Date getDate() {
+	
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public String getStatus() {

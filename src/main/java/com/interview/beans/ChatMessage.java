@@ -4,7 +4,7 @@ public class ChatMessage {
 
 	  private String msg;
 	  
-	  private String path;
+	  private ApplicantVO applicantVo;
 
 	public String getMsg() {
 		return msg;
@@ -14,12 +14,12 @@ public class ChatMessage {
 		this.msg = msg;
 	}
 
-	public String getPath() {
-		return path;
+	public ApplicantVO getApplicant() {
+		return applicantVo;
 	}
 
-	public void setPath(String path) {
-		this.path = path;
+	public void setApplicant(ApplicantVO applicant) {
+		this.applicantVo = applicant;
 	}
 	  
 }

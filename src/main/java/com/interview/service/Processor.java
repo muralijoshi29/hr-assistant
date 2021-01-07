@@ -1,6 +1,8 @@
 package com.interview.service;
 
+import com.interview.beans.ChatMessage;
+
 public interface Processor {
 
-	void process(String msg);
+	ChatMessage process(ChatMessage msg);
 }
